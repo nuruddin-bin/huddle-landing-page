@@ -20,10 +20,62 @@
 }
 
 body{
-    background-color: lightblue;
+    background-color: transparent;
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*-------------- main --------------*/
+.main{
+    width: min(90rem, 100%);
+    min-height: 50rem;
+    background-color: var(--Violet);
+    background-image: url(../img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 5rem;
+    display: flex;
+    
+}
+
+/*------------- right side -----------*/
+.left{
+    width: 60%;
+
+}
+
+.logo_link{
+    text-decoration: none;
+}
+
+.logo_img{
+    display: block;
+    margin-top: 3.75rem;
+}
+
+.mockups{
+    display: block;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+
+/*------------- right side -----------*/
+.right{
+    width: 40%;
+}
+
+
+
+
+
+/*------------ responsive ------------*/
+@media(max-width: 375px){
+    /*-------------- main --------------*/
+    .main{
+        background-image: url(../img/bg-mobile.svg);
+    }
 }

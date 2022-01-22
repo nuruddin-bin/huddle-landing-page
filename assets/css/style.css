@@ -38,12 +38,11 @@ body{
     background-position: center;
     padding: 0 5rem;
     display: flex;
-    
 }
 
 /*------------- right side -----------*/
 .left{
-    width: 60%;
+    width: 62%;
 
 }
 
@@ -65,14 +64,104 @@ body{
 
 /*------------- right side -----------*/
 .right{
-    width: 40%;
+    width: 38%;
+    margin-left: 3rem;
+    position: relative;
+}
+
+.right_title{
+    font-family: var(--ff-poppins);
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: var(--fw-semi-bold);
+    line-height: 1.5;
+    margin-top: 15rem;
+}
+
+.right_sub-title{
+    font-family: var(--ff-open-sans);
+    color: #fff;
+    font-size: 1rem;
+    max-width: 50ch;
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+    margin-top: 1.5rem;
+}
+
+.right_registor{
+    text-decoration: none;
+    color: var(--Soft-Magenta);
+    background-color: #fff;
+    font-size: 1.2rem;
+    font-weight: var(--fw-regular);
+    padding: 1rem 4rem;
+    border-radius: 5rem;
+    display: inline-block;
+    margin-top: 2rem;
+    box-shadow: 0 5px 30px 5px rgba(0, 0, 0, 0.1);
+    transition: .3s;
+}
+
+.right_registor:hover{
+    color: #fff;
+    background-color: var(--Soft-Magenta);
+}
+
+/* social */
+.right_social{
+    position: absolute;
+    bottom: 2.5rem;
+    right: 0;
+    display: flex;
+}
+
+.right_social a{
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: .5rem;
+    font-size: 1.2rem;
+    color: #fff;
+    transition: .3s;
+}
+
+.right_social a:hover{
+    color: #ff51c4;
+    border: 2px solid #ff51c4;
 }
 
 
 
-
-
 /*------------ responsive ------------*/
+
+@media(max-width: 1120px){
+    /*-------------- main --------------*/
+    .main{
+
+    }
+
+    /*------------- left side -----------*/
+    .left{
+
+    }
+
+    .mockups{
+        
+    }
+
+    /*------------- right side -----------*/
+    .right{
+
+    }
+}
+
+
 @media(max-width: 375px){
     /*-------------- main --------------*/
     .main{

@@ -43,7 +43,6 @@ body{
 /*------------- right side -----------*/
 .left{
     width: 62%;
-
 }
 
 .logo_link{
@@ -67,6 +66,10 @@ body{
     width: 38%;
     margin-left: 3rem;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .right_title{
@@ -75,7 +78,6 @@ body{
     font-size: 2.5rem;
     font-weight: var(--fw-semi-bold);
     line-height: 1.5;
-    margin-top: 15rem;
 }
 
 .right_sub-title{
@@ -90,7 +92,7 @@ body{
 
 .right_registor{
     text-decoration: none;
-    color: var(--Soft-Magenta);
+    color: var(--Violet);
     background-color: #fff;
     font-size: 1.2rem;
     font-weight: var(--fw-regular);
@@ -141,23 +143,100 @@ body{
 /*------------ responsive ------------*/
 
 @media(max-width: 1120px){
-    /*-------------- main --------------*/
-    .main{
-
-    }
 
     /*------------- left side -----------*/
     .left{
-
-    }
-
-    .mockups{
-        
+        width: 50%;
     }
 
     /*------------- right side -----------*/
     .right{
+        width: 50%;
+    }
+}
 
+
+@media(max-width: 901px){
+    /*----------- main -----------*/
+    .main{
+        flex-direction: column;
+        padding: 0 2rem;
+    }
+
+    /*------------- left side -----------*/
+    .left{
+        width: 100%;
+    }
+
+    .logo_img{
+        margin-top: 2rem;
+    }
+
+    .mockups{
+        width: min(25rem, 100%);
+        margin-inline: auto;
+        margin-top: 2rem;
+    }
+
+    /*------------- right side -----------*/
+    .right{
+        width: 100%;
+        min-height: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .right_title{
+        font-size: 2rem;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .right_sub-title{
+        max-width: 100%;
+    }
+
+    .right_registor{
+        margin-inline: auto;
+    }
+
+    .right_social{
+        bottom: -10vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+@media(max-width: 512px){
+    /* main */
+    .main{
+        padding: 1.5rem;
+    }
+
+    /* left slide */
+    .logo_img{
+        width: 70%;
+        margin-top: 1rem;
+    }
+
+    /* right side */
+    .right_title{
+        font-size: 1.5rem;
+    }
+
+    .right_sub-title{
+        margin-top: .5rem;
+    }
+
+    .right_registor{
+        padding: .5rem 4rem;
+    }
+
+    /* social */
+    .right_social{
+        bottom: -4rem;
     }
 }
 
